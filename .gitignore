@@ -1,0 +1,5 @@
+.netlify/
+.agents/
+node_modules/
+skills-lock.json
+.DS_Store
