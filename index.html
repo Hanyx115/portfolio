@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="noise" aria-hidden="true"></div>
     <header class="nav wrap">
       <a class="brand" href="#home" aria-label="Ahmed Hany AlHady, home">AH<span>.</span></a>
-      <nav aria-label="Main navigation">
+      <nav id="primary-navigation" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#internships">Internships</a>
@@ -27,6 +27,7 @@
         <a href="#education">Education</a>
       </nav>
       <a class="nav-contact" href="mailto:ahmedhanyx115@gmail.com">Let's talk <span aria-hidden="true">&#8599;</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span>Menu</span><i aria-hidden="true"></i></button>
     </header>
 
     <main id="main-content">
@@ -97,10 +98,10 @@
       </section>
 
       <section class="projects wrap section" id="projects">
-        <div class="section-head"><p class="section-label">04 / SELECTED PROJECTS</p><div><h2>Ideas made <em>tangible.</em></h2><div class="carousel-controls"><button class="prev" type="button" aria-label="Previous project">&#8592;</button><span class="count" aria-live="polite"><b>01</b> / 06</span><button class="next" type="button" aria-label="Next project">&#8594;</button></div></div></div>
-        <div class="project-viewport"><div class="project-track">
-          <article class="project-card project-alzemora project-with-media"><div class="project-number">01 / BACKEND ARCHITECTURE</div><div class="project-gallery project-gallery-contain"><figure><img src="assets/projects/alzemora-api-map.png" alt="Alzemora backend API endpoint map covering identity, recognition, monitoring, medication, alerts, GPS, and ML controls" /></figure><figure><img src="assets/projects/alzemora-data-model.png" alt="Alzemora MongoDB data model for identity, patient monitoring, care management, and operational state" /></figure></div><div class="project-content"><p>BACKEND ARCHITECTURE / TEAM LEAD</p><h3>Alzemora</h3><p class="project-sub">Designed the FastAPI backend and MongoDB model connecting identity, recognition, patient monitoring, medication workflows, alerts, GPS, and device controls.</p></div><div class="project-tags"><span>Python</span><span>FastAPI</span><span>MongoDB</span><span>REST APIs</span></div></article>
-          <article class="project-card project-andalusia project-with-media"><div class="project-number">02 / BILINGUAL PRODUCT</div><div class="project-gallery"><figure><img src="assets/projects/andalusia-english.png" alt="Andalusia Academy English landing page" /></figure><figure><img src="assets/projects/andalusia-arabic.png" alt="Andalusia Academy Arabic right-to-left landing page" /></figure></div><div class="project-content"><p>FULL-STACK PRODUCT / EDUCATION</p><h3>Andalusia Academy</h3><p class="project-sub">Built a bilingual course-discovery experience backed by versioned .NET APIs, SQL Server foundations, reusable React components, and native RTL/LTR delivery.</p></div><div class="project-tags"><span>React 18</span><span>TypeScript</span><span>ASP.NET Core</span><span>SQL Server</span></div></article>
+        <div class="section-head"><p class="section-label">04 / SELECTED PROJECTS</p><div><h2>Ideas made <em>tangible.</em></h2><div class="carousel-tools"><p class="carousel-hint">Use arrows, keyboard, or swipe</p><div class="carousel-controls"><button class="prev" type="button" aria-label="Previous project">&#8592;</button><span class="count" aria-live="polite" aria-atomic="true"><b>01</b> / 06</span><button class="next" type="button" aria-label="Next project">&#8594;</button></div></div></div></div>
+        <div class="project-viewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Selected projects"><div class="project-track">
+          <article class="project-card project-alzemora project-with-media"><div class="project-number">01 / BACKEND ARCHITECTURE</div><div class="project-gallery project-gallery-contain"><figure><img src="assets/projects/alzemora-api-map.png" loading="lazy" alt="Alzemora backend API endpoint map covering identity, recognition, monitoring, medication, alerts, GPS, and ML controls" /></figure><figure><img src="assets/projects/alzemora-data-model.png" loading="lazy" alt="Alzemora MongoDB data model for identity, patient monitoring, care management, and operational state" /></figure></div><div class="project-content"><p>BACKEND ARCHITECTURE / TEAM LEAD</p><h3>Alzemora</h3><p class="project-sub">Designed the FastAPI backend and MongoDB model connecting identity, recognition, patient monitoring, medication workflows, alerts, GPS, and device controls.</p></div><div class="project-tags"><span>Python</span><span>FastAPI</span><span>MongoDB</span><span>REST APIs</span></div></article>
+          <article class="project-card project-andalusia project-with-media"><div class="project-number">02 / BILINGUAL PRODUCT</div><div class="project-gallery"><figure><img src="assets/projects/andalusia-english.png" loading="lazy" alt="Andalusia Academy English landing page" /></figure><figure><img src="assets/projects/andalusia-arabic.png" loading="lazy" alt="Andalusia Academy Arabic right-to-left landing page" /></figure></div><div class="project-content"><p>FULL-STACK PRODUCT / EDUCATION</p><h3>Andalusia Academy</h3><p class="project-sub">Built a bilingual course-discovery experience backed by versioned .NET APIs, SQL Server foundations, reusable React components, and native RTL/LTR delivery.</p></div><div class="project-tags"><span>React 18</span><span>TypeScript</span><span>ASP.NET Core</span><span>SQL Server</span></div></article>
           <article class="project-card project-eurosat"><div class="project-number">03</div><div class="project-icon" aria-hidden="true">CV</div><div class="project-content"><p>AI / COMPUTER VISION</p><h3>EuroSAT</h3><p class="project-sub">Satellite land-use classification using transfer learning, data augmentation, and a fine-tuned ResNet-50.</p></div><div class="project-tags"><span>PyTorch</span><span>ResNet-50</span><span>CNN</span></div></article>
           <article class="project-card project-data"><div class="project-number">04</div><div class="project-icon" aria-hidden="true">5V</div><div class="project-content"><p>BIG DATA / SYSTEMS</p><h3>Data Pipeline</h3><p class="project-sub">A distributed analytics pipeline for complex transformations across large-scale datasets.</p></div><div class="project-tags"><span>Apache Spark</span><span>PySpark</span><span>Hadoop</span></div></article>
           <article class="project-card project-arena"><div class="project-number">05</div><div class="project-icon" aria-hidden="true">XI</div><div class="project-content"><p>FULL-STACK / WEB</p><h3>Ankh Arena</h3><p class="project-sub">A responsive full-stack Fantasy Premier League replica with server-side application logic and SQL-backed data.</p></div><div class="project-tags"><span>React</span><span>Node.js</span><span>SQL</span></div></article>
@@ -116,6 +117,7 @@
 
       <section class="contact wrap" id="contact"><p class="section-label">08 / GET IN TOUCH</p><h2>Have an idea worth<br /><em>bringing to life?</em></h2><a class="contact-email" href="mailto:ahmedhanyx115@gmail.com">ahmedhanyx115@gmail.com <span aria-hidden="true">&#8599;</span></a><div class="contact-bottom"><p>ALEXANDRIA, EGYPT / OPEN TO REMOTE</p><div><a href="assets/Ahmed-Hany-AlHady-CV.pdf" download>Download CV</a><a href="https://github.com/Hanyx115" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/ahmedhanyx115/" target="_blank" rel="noreferrer">LinkedIn</a></div></div></section>
     </main>
-    <script src="script.js"></script>
+    <a class="back-to-top" href="#home" aria-label="Back to top">&#8593;</a>
+    <script src="script.js?v=2"></script>
   </body>
 </html>
