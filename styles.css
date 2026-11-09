@@ -54,3 +54,17 @@
 .carousel-controls button{transition:transform .18s ease,background-color .18s ease,border-color .18s ease,color .18s ease}
 @media(hover:none){.experience-card:hover,.project-card:hover{transform:none;box-shadow:none}.project-card:hover .project-icon{transform:none}}
 @media(max-width:720px){.experience .section-head{display:block}.experience .section-head h2{font-size:clamp(36px,12vw,52px)}.carousel-viewport{padding-top:8px}.project-viewport{padding-top:8px;margin-top:27px}}
+
+/* Clear separation between employment, internships, education, and leadership */
+.experience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.experience-grid .experience-card{min-width:0;height:405px}
+.internships{border-top:1px solid var(--line)}
+.internship-head{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:end;margin-bottom:52px}
+.internship-head h2{margin:0;font-size:clamp(36px,4.6vw,60px)}
+.internship-head p{color:var(--sub);line-height:1.75;margin:0;max-width:440px}
+.internship-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.internship-card{min-width:0;height:365px;background:#171a34}
+.internship-card h3{margin-top:48px}
+.leadership{border-top:1px solid var(--line)}
+@media(max-width:900px){.nav nav{display:none}.internship-grid{grid-template-columns:1fr}.internship-card{height:340px}.internship-head{grid-template-columns:1fr;gap:18px}}
+@media(max-width:720px){.experience-grid{grid-template-columns:1fr}.experience-grid .experience-card{height:375px}.internship-head{margin-bottom:35px}.internship-card{height:365px}}
