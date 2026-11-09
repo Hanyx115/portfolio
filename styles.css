@@ -36,3 +36,21 @@
 .education-list p{color:var(--sub);margin:0;line-height:1.5}
 @media(max-width:720px){.hero-art{overflow:hidden}.education-grid{display:block}.education-intro{margin-bottom:45px}.education-list h3{font-size:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Interaction and pacing refinement */
+.experience .section-head{grid-template-columns:minmax(140px,180px) minmax(0,1fr);align-items:start}
+.experience .section-head>div{display:block;min-width:0}
+.experience .section-head h2{max-width:760px;font-size:clamp(42px,4.6vw,64px);line-height:1.02}
+.experience .carousel-controls{justify-content:flex-start;margin-top:24px}
+.carousel-viewport{padding:12px 0 28px;margin-bottom:-28px}
+.project-viewport{padding:12px 0 28px;margin-top:45px;margin-bottom:-28px}
+.carousel-track,.project-track{transition-duration:.42s;transition-timing-function:cubic-bezier(.22,.75,.2,1)}
+.experience-card{transition:transform .24s cubic-bezier(.2,.8,.2,1),border-color .18s ease,box-shadow .24s ease,background-color .24s ease}
+.experience-card:hover{transform:translateY(-5px);border-color:var(--lime);box-shadow:0 16px 36px rgba(0,0,0,.28);background:#242846}
+.project-card{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s ease,filter .22s ease}
+.project-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(0,0,0,.3);filter:saturate(1.04)}
+.project-icon{transition:transform .32s cubic-bezier(.2,.8,.2,1),opacity .2s ease}
+.project-card:hover .project-icon{transform:rotate(7deg) scale(1.07);opacity:1}
+.carousel-controls button{transition:transform .18s ease,background-color .18s ease,border-color .18s ease,color .18s ease}
+@media(hover:none){.experience-card:hover,.project-card:hover{transform:none;box-shadow:none}.project-card:hover .project-icon{transform:none}}
+@media(max-width:720px){.experience .section-head{display:block}.experience .section-head h2{font-size:clamp(36px,12vw,52px)}.carousel-viewport{padding-top:8px}.project-viewport{padding-top:8px;margin-top:27px}}
