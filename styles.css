@@ -74,3 +74,21 @@
 .ticker-item{display:block;flex:none;padding-right:44px}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker .ticker-track{animation-duration:48s!important;animation-iteration-count:infinite!important}}
+
+/* Recruiter-ready CV access and authentic project evidence */
+.hero-actions{flex-wrap:wrap}
+.button-cv{padding:14px 18px;border:1px solid var(--purple);border-radius:3px;transition:transform .2s ease,background-color .2s ease,color .2s ease}
+.button-cv:hover{transform:translateY(-3px);background:var(--purple);color:#10132d}
+.button-cv span{padding-left:10px}
+.project-with-media{height:570px;padding:18px;background:#12162d;color:var(--text);border:1px solid #393e60}
+.project-with-media .project-number{margin-bottom:14px;color:#aeb2ca}
+.project-gallery{display:grid;grid-template-columns:1fr 1fr;gap:9px;height:190px;margin-bottom:19px}
+.project-gallery figure{margin:0;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#f6f4ee}
+.project-gallery img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.project-gallery-contain img{object-fit:contain}
+.project-with-media:hover .project-gallery img{transform:scale(1.025)}
+.project-with-media .project-content{margin-top:0}
+.project-with-media .project-content h3{font-size:38px;letter-spacing:-2.5px}
+.project-with-media .project-sub{max-width:500px;color:#d4d6e2}
+.project-with-media .project-tags{margin-top:auto}
+@media(max-width:720px){.hero-actions{gap:12px}.button-quiet{margin-left:4px}.project-with-media{height:585px}.project-gallery{height:165px}.project-with-media .project-content h3{font-size:34px}}
